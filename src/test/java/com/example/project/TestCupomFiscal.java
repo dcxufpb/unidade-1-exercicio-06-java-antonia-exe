@@ -89,14 +89,14 @@ public class TestCupomFiscal {
 	@Test
 	public void nomeVazio() {
 		CupomFiscal.NOME_LOJA = "";
-		verificarCampoObrigatorio("O campo nome da loja é obrigatório");
+		verificarCampoObrigatorio("O campo nome da loja e obrigatorio");
 		CupomFiscal.NOME_LOJA = "Loja 1";
 	}
 
 	@Test
 	public void logradouroVazio() {
 		CupomFiscal.LOGRADOURO = "";
-		verificarCampoObrigatorio("O campo logradouro do endereço é obrigatório");
+		verificarCampoObrigatorio("O campo logradouro do endereco e obrigatorio");
 		CupomFiscal.LOGRADOURO = "Log 1";
 	}
 
@@ -124,14 +124,14 @@ public class TestCupomFiscal {
 	@Test
 	public void municipioVazio() {
 		CupomFiscal.MUNICIPIO = "";
-		verificarCampoObrigatorio("O campo município do endereço é obrigatório");
+		verificarCampoObrigatorio("O campo municipio do endereco e obrigatorio");
 		CupomFiscal.MUNICIPIO = "Mun 1";
 	}
 
 	@Test
 	public void estadoVazio() {
 		CupomFiscal.ESTADO = "";
-		verificarCampoObrigatorio("O campo estado do endereço é obrigatório");
+		verificarCampoObrigatorio("O campo estado do endereco e obrigatorio");
 	    CupomFiscal.ESTADO = "E1";
 	}
 
@@ -159,14 +159,14 @@ public class TestCupomFiscal {
 	@Test
 	public void cnpjVazio() {
 		CupomFiscal.CNPJ = "";
-		verificarCampoObrigatorio("O campo CNPJ da loja é obrigatório");
+		verificarCampoObrigatorio("O campo CNPJ da loja e obrigatorio");
 	    CupomFiscal.CNPJ = "11.111.111/1111-11";
 	}
 
 	@Test
 	public void inscricaoEstadualVazia() {
 		CupomFiscal.INSCRICAO_ESTADUAL = "";
-		verificarCampoObrigatorio("O campo inscrição estadual da loja é obrigatório");
+		verificarCampoObrigatorio("O campo inscricao estadual da loja e obrigatorio");
 		CupomFiscal.INSCRICAO_ESTADUAL = "123456789";
 	}
 	

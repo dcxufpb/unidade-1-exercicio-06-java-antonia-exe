@@ -24,11 +24,11 @@ public class CupomFiscal {
 
 	public static String dadosLoja() throws RuntimeException{
 		if(NOME_LOJA.equals("")){
-			throw new RuntimeException("O campo nome da loja é obrigatório");
+			throw new RuntimeException("O campo nome da loja e obrigatorio");
 		}
 
 		if(LOGRADOURO.equals("")){
-			throw new RuntimeException("O campo logradouro do endereço é obrigatório");
+			throw new RuntimeException("O campo logradouro do endereco e obrigatorio");
 		}
 
 		String numero1 = NUMERO + "";
@@ -37,33 +37,33 @@ public class CupomFiscal {
 		}
 
 		if(MUNICIPIO.equals("")){
-			throw new RuntimeException("O campo município do endereço é obrigatório");
+			throw new RuntimeException("O campo municipio do endereco e obrigatorio");
 		}
 		
 		if(ESTADO.equals("")){
-			throw new RuntimeException("O campo estado do endereço é obrigatório");
+			throw new RuntimeException("O campo estado do endereco e obrigatorio");
 		}
 
 		if(CNPJ.equals("")){
-			throw new RuntimeException("O campo CNPJ da loja é obrigatório");
+			throw new RuntimeException("O campo CNPJ da loja e obrigatorio");
 		}
 
 		if(INSCRICAO_ESTADUAL.equals("")){
-			throw new RuntimeException("O campo inscrição estadual da loja é obrigatório");
+			throw new RuntimeException("O campo inscricao estadual da loja e obrigatorio");
 		}
 
-		var linha2 = LOGRADOURO + ", " + numero1;
+		String linha2 = LOGRADOURO + ", " + numero1;
 		if (! isEmpty(COMPLEMENTO)){
 			linha2 += " " + COMPLEMENTO;
 		}
 		
-		var linha3 = "";
+		String linha3 = "";
 		if (! isEmpty(BAIRRO)){
 		  linha3 += BAIRRO + " - ";
 		}
 		linha3 += MUNICIPIO + " - " + ESTADO;
 	  
-		var linha4 = "";
+		String linha4 = "";
 		if (! isEmpty(CEP)){
 		  linha4 = "CEP:" + CEP;
 		}
@@ -77,7 +77,7 @@ public class CupomFiscal {
 		  linha4 += ENDLN;
 		}
 	  
-		var linha5 = "";
+		String linha5 = "";
 		if (! isEmpty(OBSERVACAO)){
 		  linha5 += OBSERVACAO;
 		}
